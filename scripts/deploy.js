@@ -1,7 +1,7 @@
 const { ethers } = require("hardhat");
 
 (async () => {
-    const factory = await ethers.getContractFactory("Counter");
+    const factory = await ethers.getContractFactory("Forum");
     const contract = await factory.deploy();
 
     await contract.waitForDeployment();
